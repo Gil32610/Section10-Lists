@@ -7,6 +7,10 @@ record GroceryItem(String name, String type, int count) {
     public GroceryItem(String name) {
         this(name, "DAIRY", 1);
     }
+    @Override
+    public String toString(){
+        return String.format("%d %s in %s",count, name.toUpperCase(),type);
+    }
 }
 
 public class Main {
@@ -28,7 +32,21 @@ public class Main {
         //Diamond operator
         ArrayList<GroceryItem> groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("butter"));
-
+        groceryList.add(new GroceryItem("milk"));
+        groceryList.add(new GroceryItem("oranges", "PRODUCE",5));
+        // if the angle brackets is not present on the instantiation part, java won't do compile time checking
+        printDashes();
+        System.out.println("Adding an item to the beginning:");
+        groceryList.add(0,new GroceryItem("apples", "PRODUCE", 6));
+        System.out.println(groceryList);
+        printDashes();
+        System.out.println("Setting an item on the beginning:");
+        groceryList.set(0, new GroceryItem("CHOCOLATE"));
+        System.out.println(groceryList);
+        printDashes();
+        System.out.println("Removing an element from the list:");
+        groceryList.remove(1);
+        System.out.println(groceryList);
     }
 
     public static void printDashes(){
