@@ -1,4 +1,4 @@
-package dev.lpa;
+package dev.lpa.arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,15 +1,15 @@
-package dev.lpa;
+package dev.lpa.morelists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class MoreLists {
+public class Main {
     public static void main(String[] args) {
         String[] items = {"APPLES", "BANANAS", "MILK", "EGGS"};
         printDashes();
-        System.out.println("Lists ara immutables!");
+        System.out.println("Lists are immutables!");
         List<String> list = List.of(items);
         System.out.println(list);
         System.out.println(list.getClass().getName());
