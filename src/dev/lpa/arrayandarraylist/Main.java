@@ -32,6 +32,10 @@ public class Main {
         System.out.println("Creating arrays from arraylists");
         ArrayList<String> stringLists = new ArrayList<>(List.of("some", "words", "written"));
         String [] stringArray = stringLists.toArray(new String[0]);
+        System.out.println("If the length of the array passed is less than the number of the elements of the list,\n" +
+                "the returned array will have its size increased and filled with the elements");
+        System.out.println("If the length of the array passed is greater than the number of the elements of the list,\n" +
+                "the returned array will have the extra elements will be filled with default values (primitive/null");
 
     }
 }
