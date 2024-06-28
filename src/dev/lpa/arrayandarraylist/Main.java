@@ -1,9 +1,6 @@
 package dev.lpa.arrayandarraylist;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -37,5 +34,6 @@ public class Main {
         System.out.println("If the length of the array passed is greater than the number of the elements of the list,\n" +
                 "the returned array will have the extra elements will be filled with default values (primitive/null");
 
+    List<String> stringList = Arrays.asList("gil","russo","arquimedes");
     }
 }
